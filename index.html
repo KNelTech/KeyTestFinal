@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing Ground</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js" defer></script>
+    <script src="src/index.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <div class="keyboardContainer">
+            <div class="simple-keyboard-main"></div>
+            <div class="controlArrows">
+                <div class="simple-keyboard-control"></div>
+                <div class="simple-keyboard-arrows"></div>
+            </div>
+           <div class="numPad">
+                <div class="simple-keyboard-numpad"></div>
+                <div class="simple-keyboard-numpadEnd"></div>
+            </div>
+        </div>
+        <div id="virtual-mouse">
+            <div id="left-button" class="button">Left Button</div>
+            <div id="middle-button" class="button">Middle Button</div>
+            <div id="right-button" class="button">Right Button</div>
+            <div id="scroll" class="button">Scroll</div>
+        </div>
+        <div class="aux" id="webcamTesting">
+            <button id="webcamTest">Test Webcam</button>
+            <button id="snap" style="display:none;">Snap Photo</button>
+            <video id="video" width="640" height="480" autoplay style="display:none;"></video>
+            <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+        </div>
+        <div class="aux" id="microphoneTesting">
+            <button id="microphoneTest">Test Microphone</button>
+            <audio controls id="audio"></audio>
+        </div>
+    </div>
+</body>
+</html>
