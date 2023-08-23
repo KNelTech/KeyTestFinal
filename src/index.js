@@ -153,9 +153,9 @@ function webcamAccess() {
       console.log("Error: " + err);
     });
   }
-  video.style.display = "block";
+  video.style.display = "inline";
   snap.style.display = "block";
-  canvas.style.display = "block";
+  canvas.style.display = "inline";
 }
 
 // Function to stop webcam
